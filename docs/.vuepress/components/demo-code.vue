@@ -35,7 +35,7 @@ export default {
 };
 </script>
 
-<style lang="stylus" scoped>
+<style lang="scss" scoped>
 .code {
   margin-bottom: 40px;
 
@@ -62,8 +62,6 @@ export default {
     box-shadow: 0 0 2px 0 rgba(232, 237, 250, 0.6), 0 1px 2px 0 rgba(232, 237, 250, 0.5);
 
     .code-content {
-      overflow: hidden;
-      box-sizing: border-box;
       padding: 4%;
       border-bottom: 1px solid #ddd;
     }
@@ -92,15 +90,18 @@ export default {
   }
 }
 
-.content pre, .content pre[class*='language-'] {
+.content pre,
+.content pre[class*='language-'] {
   background-color: #f5f5f5;
 }
 
-.content pre code, .content pre[class*='language-'] code {
+.content pre code,
+.content pre[class*='language-'] code {
   color: #2d2929;
 }
 
-.content pre, .content pre[class*='language-'] {
+.content pre,
+.content pre[class*='language-'] {
   &:not(:first-child) {
     margin-top: 0;
   }
